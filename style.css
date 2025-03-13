@@ -47,7 +47,7 @@ body {
 #leftside{
   position: absolute;
   left: 0%;
-  top: 17%;
+  top: 7%;
   width: 10px;
   height: 10px;
   z-index: 1;
@@ -61,7 +61,7 @@ body {
 #rightside{
   position: absolute;
   right: 20%;
-  top: 8%;
+  top: 3%;
   width: 10px;
   height: 10px;
   z-index: 1;
