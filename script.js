@@ -1,6 +1,24 @@
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const links = document.querySelectorAll("#links a");
+
+  function setActiveLink() {
+      links.forEach(link => link.classList.remove("active")); // Remove active class from all
+      this.classList.add("active"); // Add active class to clicked link
+      localStorage.setItem("activeLink", this.getAttribute("href")); // Store active link in local storage
+  }
+
+  links.forEach(link => {
+      link.addEventListener("click", setActiveLink);
+      if (localStorage.getItem("activeLink") === link.getAttribute("href")) {
+          link.classList.add("active");
+      }
+  });
+});
+
+
 function loco(){
     gsap.registerPlugin(ScrollTrigger);
 
@@ -40,27 +58,103 @@ ScrollTrigger.refresh();
 loco()
 
 
-// function work(){
-//   var tl = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: "#work",
-//         start: " top 0% ",
-//         scrub: 1,
-//         pin: true,
-//         markers : true,
-  
-//     }
-//   })
-  
-//   tl.to("#work #lower #elem",{
-//     // rotate: "-180deg",
-//     // scale: .6,
-//     // stagger: .1,
-//     x : -1000,
-//     ease: Power1,
-//     pin:true,
-//   })
-// }
+function appear(){
+  // Select all elements with the class '.appear'
+const appearElements = document.querySelectorAll('.appear');
 
-// work();
+// Create an intersection observer to detect when the element comes into view
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');  // Trigger the animation when the element is in view
+      observer.unobserve(entry.target);  // Stop observing once the element is in view (animation triggered)
+    }
+  });
+}, { threshold: 0.5 });  // Element is considered in view when 50% is visible (adjust as needed)
+
+// Observe each element with the 'appear' class
+appearElements.forEach(element => {
+  observer.observe(element);
+});
+
+}
+
+appear();
+
+
+function loading(){
+  var tl = gsap.timeline();
+
+  tl.from("#nav", {
+    duration: 1.2,
+    y: "-100px",
+    ease: "expo.out",
+  });
+
+  tl.from("#hero h1", {
+    duration: 1.2,
+    y: "50px",
+    opacity : 0,
+    ease: "expo.out",
+  }, "-=0.5");
+
+  tl.from("#hero p", {
+    duration: 1.2,
+    y: "50px",
+    opacity : 0,
+    ease: "expo.out",
+  }, "-=0.5");
+
+  tl.from("#hero #buttondiv", {
+    duration: 1.2,
+    y: "50px",
+    opacity : 0,
+    ease: "expo.out",
+  }, "-=0.5");
+
+}
+
+loading();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const countNumbers = document.querySelectorAll(".numbers");
+  const speed = 50;
+
+  const startCounting = (count) => {
+    const targetNumber = parseInt(count.dataset.number);
+    let startingNumber = 0; // Start from 0 to animate correctly
+
+    const updateNumber = () => {
+      const increment = Math.ceil(targetNumber / speed);
+      if (startingNumber < targetNumber) {
+        startingNumber += increment;
+        count.innerText = `${startingNumber}+`; // Update UI
+        setTimeout(updateNumber, 20);
+      } else {
+        count.innerText = `${targetNumber}+`; // Ensure it stops at the exact number
+      }
+    };
+
+    updateNumber();
+  };
+
+  // Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          startCounting(entry.target);
+          observer.unobserve(entry.target); // Unobserve after triggering animation
+        }
+      });
+    },
+    { threshold: 0.5 } // Adjust threshold if needed
+  );
+
+  // Observe each element
+  countNumbers.forEach((count) => {
+    observer.observe(count);
+  });
+});
 
