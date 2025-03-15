@@ -112,6 +112,13 @@ function loading(){
     ease: "expo.out",
   }, "-=0.5");
 
+  tl.from("#second-h1" , {
+    duration: 1.2,
+    y: "50px",
+    opacity : 0,
+    ease: "expo.out",
+  },"-=0.5");
+
 }
 
 loading();
