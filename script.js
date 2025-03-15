@@ -158,3 +158,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+function about(){
+  var clutter = "";
+
+document.querySelector("#about-text>h3").textContent.split("").forEach(function(dets){
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#about-text>h3").innerHTML = clutter;
+})
+
+
+gsap.to("#about-text>h3>span",{
+  scrollTrigger:{
+      trigger:`#about-text>h3>span`,
+      start:`top bottom`,
+      end:`bottom top`,
+      scroller:`#main`,
+      scrub:.5,
+  },
+  stagger:.2,
+  color:`#000`
+})
+}
+about();
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("#page4 .elem").forEach(elem => {
+      elem.style.cursor = "pointer";
+      elem.addEventListener("click", function () {
+          window.location.href = "https://digitaldadi.in/portfolio/";
+      });
+  });
+});
+
+
+
