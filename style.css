@@ -929,9 +929,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
+  
 
   .container {
     padding: 20px;
@@ -954,7 +952,7 @@ footer {
   .info-box {
     max-width: 100%;
   }
-}
+} 
 
 @keyframes appear {
   from {
@@ -1028,6 +1026,10 @@ footer {
   color: #000;
 }
 
+#page4 .elem a{
+  text-decoration: none;
+}
+
 #page4 .elem:hover h1{
   transform: translateY(-100%);
   color: #ff5d23;
@@ -1039,6 +1041,9 @@ footer {
 }
 
 @media (max-width: 648px) {
+  body {
+    padding: 20px;
+  }
   #main {
     padding: 10px;
     font-family: gilroy;
