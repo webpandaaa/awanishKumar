@@ -73,7 +73,7 @@ body {
 }
 
 .span {
-  color: #f15533;
+  color: #FA6742;
   font-weight: 700;
 }
 
@@ -98,7 +98,7 @@ body {
 
 #links a {
   text-decoration: none;
-  color: #a8a7a7;
+  color: #000;
   padding: 10px 15px;
   display: inline-block;
   transition: color 0.3s;
@@ -108,11 +108,11 @@ body {
 }
 
 #links a.active {
-  color: #f15533;
+  color: #FA6742;
 }
 
 #links a:hover {
-  color: #f15533;
+  color: #FA6742;
 }
 
 .anim-btn h4 a {
@@ -287,22 +287,6 @@ body {
   object-fit: cover;
 }
 
-#services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-}
-
-#upper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  gap: 20px;
-}
 
 .heading {
   text-align: center;
@@ -324,6 +308,25 @@ body {
   margin-right: 10px;
   object-fit: contain;
 }
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+#upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
 
 #services #upper h1{
   font-size: 45px;
@@ -429,8 +432,8 @@ body {
 }
 
 #about {
-  min-height: 70vh;
-  margin-top: 50px;
+  min-height: 80vh;
+  margin: 50px 0;
 }
 
 #about-text {
@@ -454,8 +457,8 @@ body {
 }
 
 #work {
-  min-height: 100vh;
-  margin-top: 50px;
+  min-height: 80vh;
+  margin-top: 100px;
 }
 
 #work #upper {
@@ -494,11 +497,17 @@ body {
   width: 50%;
 }
 
+#work #upper h2{
+  font-size: 20px;
+  text-align: center;
+  width: 30%;
+}
+
 #work #lower {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #work #lower > div {
@@ -510,69 +519,6 @@ body {
   border-radius: 15px;
 }
 
-.imgcnt {
-  padding: 20px;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-left: 15px;
-  width: 100%;
-}
-
-.img-div {
-  height: 30vw;
-  width: 25vw;
-  background-color: red;
-  position: relative;
-  overflow: hidden;
-  margin: 15px;
-  margin-top: 30px;
-  /* padding: 30px 10px; */
-}
-
-.img-div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: all ease 0.3s;
-  cursor: pointer;
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.189);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  transition: all ease 0.3s;
-  z-index: 9;
-  cursor: pointer;
-}
-
-.overlay p {
-  font-size: 2.2vw;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  opacity: 0;
-  transition: all ease 0.3s;
-}
-
-.img-div:hover .overlay {
-  background-color: #000;
-}
-
-.img-div:hover .overlay p {
-  opacity: 1;
-}
-
-.img-div:hover img {
-  scale: 1.1;
-}
 
 #stories {
   min-height: 100vh;
@@ -617,6 +563,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+  margin-top: 50px;
 }
 
 #stories-h1{
@@ -649,7 +596,7 @@ body {
 .testimonial::before {
   content: "\201C";
   font-size: 40px;
-  color: #ff4d4d;
+  color: #FA6742;
   font-weight: bold;
   position: absolute;
   top: 20px;
@@ -729,14 +676,14 @@ body {
 
 .left-panel p {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.4;
-  width: 80%;
+  width: 50%;
 }
 
 .form-upper {
   width: 40%;
-  background-color: #111111;
+  background-color:  #2B327C;
   border-radius: 25px;
   padding: 40px;
   margin: 20px 0px;
@@ -761,10 +708,12 @@ textarea {
   width: 100%;
   padding: 15px 20px;
   border: none;
+  outline: none;
   border-radius: 15px;
-  background-color: #222222;
+  background-color: #4f56a3e2;
   color: #ffffff;
   font-size: 16px;
+  font-family: gilroy;
 }
 
 textarea {
@@ -774,11 +723,11 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #888888;
+  color: #ffffffb6;
 }
 
 button {
-  background-color: #ffaa90;
+  background-color: #FA6742;
   color: #111111;
   border: none;
   border-radius: 20px;
@@ -815,7 +764,7 @@ button {
   border-radius: 20px;
   overflow: hidden;
   padding: 40px;
-  background-color: #111;
+  background-color: #2B327C;
   color: #fff;
   margin: 40px 0px;
 }
@@ -911,6 +860,21 @@ footer {
   color: #999;
 }
 
+#social{
+  display: flex;
+  gap: 25px;
+}
+
+#social a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#social a:hover{
+  color: #FA6742;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .info-section {
@@ -979,11 +943,10 @@ footer {
 }
 
 #page4{
-  min-height: 100vh;
   width: 100%;
   z-index: 9;
   position: relative;
-  padding: 100px;
+  padding: 50px;
 }
 #page4 .elem{
   /* background-color: salmon; */
@@ -993,13 +956,7 @@ footer {
   justify-content: center;
   position: relative;
 }
-#page4 .elem img{
-  position: absolute;
-  opacity: 0;
-  transition: all ease-out 0.5s;
-  transform: translateY(10%) rotate(4deg);
-  object-fit: cover;
-}
+
 #page4 .elem img:nth-child(1){
   left: -5%;
   width: 400px;
@@ -1013,6 +970,7 @@ footer {
   height: 500px;
   object-fit: cover;
 }
+
 #page4 .text-div{
   height: 15vh;
   position: relative;
@@ -1026,7 +984,8 @@ footer {
   color: #000;
 }
 
-#page4 .elem a{
+
+#page4 .elem a{ 
   text-decoration: none;
 }
 
@@ -1034,11 +993,15 @@ footer {
   transform: translateY(-100%);
   color: #ff5d23;
 }
-#page4 .elem:hover img{
-  opacity: 1;
-  transform: translateY(0%) rotate(0deg);
 
+#page4 .elem:hover {
+  color: #ff5d23;
 }
+
+#page4 .elem:hover #arr{
+  color: #ff5d23;
+}
+
 
 @media (max-width: 648px) {
   body {
@@ -1207,6 +1170,14 @@ footer {
   transition: all ease 0.3s;
 }
 
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 85vh;
+}
+
 #services #upper h1 {
   font-size: 25px;
   text-align: center;
@@ -1230,13 +1201,7 @@ footer {
   color: black;
 }
 
-#services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-height: 85vh;
-}
+
 
 #work{
   min-height: 70vh;
@@ -1332,7 +1297,7 @@ footer {
 
 .form-upper {
   width: 100%;
-  background-color: #111111;
+  background-color: ;
   border-radius: 25px;
   padding: 18px;
   margin: 20px 0px;
@@ -1368,7 +1333,7 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #ff5c39;
+  color: #FA6742;
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 5px;

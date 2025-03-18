@@ -190,14 +190,19 @@ gsap.to("#about-text>h3>span",{
 }
 about();
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("#page4 .elem").forEach(elem => {
-      elem.style.cursor = "pointer";
-      elem.addEventListener("click", function () {
-          window.location.href = "https://digitaldadi.in/portfolio/";
-      });
+document.querySelector("#scrollToBottom").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevents default anchor behavior
+  window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth"
   });
 });
 
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#main'),
+  smooth: true
+});
 
-
+document.querySelector("#scrollToBottom").addEventListener("click" , function(){
+  scroll.scrollTo(5400);
+})
