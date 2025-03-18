@@ -132,7 +132,7 @@ body {
   overflow: hidden;
   transition: all ease 0.4s;
   margin-right: 40px;
-  color: #ff5d23;
+  color: #FA6742;
 }
 
 .anim-btn h4::after {
@@ -140,7 +140,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #ff5d23;
+  background-color: #FA6742;
   left: 0;
   bottom: -100%;
   border-radius: 50%;
@@ -202,7 +202,7 @@ body {
   padding: 10px 100px;
   flex-direction: column;
   align-items: center;
-  /* border-top: 5px solid #ff5d23; */
+  /* border-top: 5px solid #FA6742; */
 }
 
 #second-h1 {
@@ -341,7 +341,7 @@ body {
   justify-content: space-between;
   margin-top: 50px;
   overflow: hidden;
-  /* background-color: #ff5d23; */
+  /* background-color: #FA6742; */
   min-height: 50vh;
 }
 
@@ -369,7 +369,7 @@ body {
   padding: 0vw 5vw;
   height: 23.3%;
   width: 100%;
-  border-bottom: 0.5px solid #ff5d23;
+  border-bottom: 0.5px solid #FA6742;
   top: 10%;
   cursor: pointer;
   padding: 20px;
@@ -392,7 +392,7 @@ body {
 }
 
 .elem:nth-child(1) {
-  border-top: 0.5px solid #ff5d23;
+  border-top: 0.5px solid #FA6742;
 }
 
 .elem > i {
@@ -419,7 +419,7 @@ body {
 .center14 {
   height: 0%;
   width: 100%;
-  background-color: #f15533;
+  background-color: #FA6742;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -658,7 +658,7 @@ body {
 
 .left-panel {
   width: 70%;
-  background-color: #f15a39;
+  background-color: #FA6742;
   padding: 80px 50px;
   display: flex;
   flex-direction: column;
@@ -783,7 +783,7 @@ header {
 .logo {
   font-size: 5rem;
   font-weight: bold;
-  color: #ff5c39;
+  color: #FA6742;
   margin-bottom: 20px;
   line-height: 1;
 }
@@ -807,7 +807,7 @@ nav {
 }
 
 nav a {
-  color: #ff5c39;
+  color: #FA6742;
   text-decoration: none;
   font-size: 1.1rem;
   transition: opacity 0.2s;
@@ -839,7 +839,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #ff5c39;
+  color: #FA6742;
   font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 15px;
@@ -991,15 +991,15 @@ footer {
 
 #page4 .elem:hover h1{
   transform: translateY(-100%);
-  color: #ff5d23;
+  color: #FA6742;
 }
 
 #page4 .elem:hover {
-  color: #ff5d23;
+  color: #FA6742;
 }
 
 #page4 .elem:hover #arr{
-  color: #ff5d23;
+  color: #FA6742;
 }
 
 
@@ -1242,7 +1242,7 @@ footer {
 .testimonial::before {
   content: "\201C";
   font-size: 40px;
-  color: #ff4d4d;
+  color: #FA6742;
   font-weight: bold;
   position: absolute;
   top: 10px;
@@ -1280,7 +1280,7 @@ footer {
 }
 
 .left-panel h1 {
-  color: #f15a39;
+  color: #FA6742;
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -1288,7 +1288,7 @@ footer {
 }
 
 .left-panel p {
-  color: #f15a39;
+  color: #FA6742;
   font-size: 15px;
   line-height: 1.4;
   font-weight: 700;
@@ -1297,7 +1297,6 @@ footer {
 
 .form-upper {
   width: 100%;
-  background-color: ;
   border-radius: 25px;
   padding: 18px;
   margin: 20px 0px;

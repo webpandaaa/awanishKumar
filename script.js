@@ -198,11 +198,3 @@ document.querySelector("#scrollToBottom").addEventListener("click", function(eve
   });
 });
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#main'),
-  smooth: true
-});
-
-document.querySelector("#scrollToBottom").addEventListener("click" , function(){
-  scroll.scrollTo(5400);
-})
