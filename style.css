@@ -1124,6 +1124,11 @@ footer {
   width: 100%;
 }
 
+#about {
+  min-height: 80vh;
+  margin-top: 80px;
+}
+
 .heading {
   text-align: center;
   font-size: 15px;
@@ -1146,11 +1151,14 @@ footer {
   line-height: 30px;
 }
 
+#companies{
+  margin-top: 80px;
+}
 #companies h1 {
   font-size: 25px;
   text-align: center;
   width: 100%;
-  margin: 0px;
+ 
 }
 
 #comp-div {
@@ -1177,6 +1185,7 @@ footer {
   align-items: center;
   width: 100%;
   min-height: 85vh;
+  margin-top: 0;
 }
 
 #services #upper h1 {
@@ -1206,12 +1215,24 @@ footer {
 
 #work{
   min-height: 70vh;
+  margin-top: 50px;
 }
 
 #work #upper h1 {
   font-size: 27px;
   text-align: center;
   width: 100%;
+}
+
+#work #upper h2 {
+  font-size: 20px;
+  text-align: center;
+  width: 90%;
+}
+
+#stories {
+  min-height: 100vh;
+  margin-top: 20px;
 }
 
 
@@ -1253,7 +1274,7 @@ footer {
 
 
 #contact{
-  min-height: 100vh;
+  min-height: 60vh;
   width: 100%;
 }
 
@@ -1262,17 +1283,16 @@ footer {
   margin-top: 50px;
   display: flex;
   width: 100%;
+  height: 600px;
   border-radius: 0px;
-  background-color: #fff;
   position: relative;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  background-color: #fff;
 }
 
 .left-panel {
   width: 100%;
-  background-color: #fff;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -1309,17 +1329,6 @@ footer {
 
 }
 
-nav {
-  flex-direction: row;
-  gap: 20px;
-}
-
-.tagline {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
 header {
   flex-direction: column;
   gap: 30px;
@@ -1344,6 +1353,9 @@ header {
   line-height: 18px;
 }
 
+#footer{
+  margin-top: 80px;
+}
 
 #page4 {
   min-height: 50vh;
